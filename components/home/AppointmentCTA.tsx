@@ -10,8 +10,8 @@ export default function AppointmentCTA() {
   const reduceMotion = useReducedMotion();
 
   return (
-    <section className="bg-[#f5fbf9] px-4 py-8 sm:px-8 sm:py-10 lg:px-12 w-[100%]">
-      <div className="mx-auto max-w-[1380px]">
+    <section className="bg-[#f5fbf9] py-8 sm:py-10 w-[100%]">
+      <div className="mx-auto max-w-[1500px] px-5 lg:px-10 xl:px-14">
         <motion.div
           initial={reduceMotion ? false : { opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}

@@ -104,7 +104,7 @@ export default function StatsSection() {
     <section
       ref={sectionRef}
       aria-labelledby="stats-heading"
-      className="relative isolate overflow-hidden bg-[#f4fbf9] px-5 py-10 sm:px-8 sm:py-12 lg:px-12 w-[100%]"
+      className="relative isolate overflow-hidden bg-[#f4fbf9] max-w-[1500px] px-5 lg:px-10 xl:px-14 py-10 sm:py-12 w-[100%]"
     >
       
       <div className="pointer-events-none absolute inset-0 -z-10">
@@ -165,7 +165,7 @@ export default function StatsSection() {
         />
       </motion.div>
 
-      <div className="relative mx-auto max-w-[1120px]">
+      <div className="relative mx-auto">
         
         <motion.div
           initial={reduceMotion ? false : { opacity: 0, y: 15 }}

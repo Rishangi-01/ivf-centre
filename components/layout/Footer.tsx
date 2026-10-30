@@ -101,7 +101,7 @@ export default function Footer() {
         <div className="absolute -bottom-40 left-[20%] h-80 w-80 rounded-full bg-[#13827a]/10 blur-3xl" />
       </div>
 
-      <div className="relative mx-auto max-w-[1480px] px-5 sm:px-8 lg:px-12">
+      <div className="relative mx-auto max-w-[1500px] px-5 sm:px-8 lg:px-12">
         {/* Main footer */}
         <motion.div
           initial={reduceMotion ? false : "hidden"}
@@ -117,7 +117,7 @@ export default function Footer() {
               aria-label="Hope IVF home"
               className="inline-flex items-center gap-3 rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
             >
-              <div className="relative h-[54px] w-[80px] lg:h-[54px] lg:w-[155px] shrink-0">
+              <div className="relative h-[54px] w-[80px] lg:h-[54px] lg:w-[211px] shrink-0">
                 <Image
                   src="/images/white-logo.png"
                   alt="Hope IVF"

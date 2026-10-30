@@ -144,9 +144,9 @@ export default function SuccessStories() {
   return (
     <section
       id="success-stories"
-      className="w-full overflow-hidden bg-white px-5 py-12 sm:px-8 sm:py-12 lg:px-12"
+      className="w-full overflow-hidden bg-white py-12 sm:py-12"
     >
-      <div className="mx-auto max-w-[1240px]">
+      <div className="mx-auto max-w-[1500px] px-5 lg:px-10 xl:px-14">
         <motion.div
           initial={reduceMotion ? false : { opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

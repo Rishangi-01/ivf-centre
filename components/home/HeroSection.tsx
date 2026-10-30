@@ -48,7 +48,7 @@ export default function HeroSection() {
         <div className="absolute bottom-0 right-0 h-72 w-72 rounded-full bg-[#e8f5ef]/60 blur-3xl" />
       </div>
 
-      <div className="mx-auto grid min-h-[650px] max-w-[1600px] grid-cols-1 items-center gap-8 px-5 pb-12 pt-10 sm:px-8 lg:min-h-[610px] lg:grid-cols-[0.93fr_1.07fr] lg:gap-0 lg:px-10 lg:pb-8 lg:pt-8 xl:px-20">
+      <div className="mx-auto grid min-h-[650px] grid-cols-1 items-center gap-8 pb-12 pt-10 lg:min-h-[610px] lg:grid-cols-[0.93fr_1.07fr] lg:gap-0 max-w-[1500px] px-5 lg:px-10 xl:px-14 lg:pb-8 lg:pt-8">
         <div className="relative z-20 flex flex-col items-start lg:py-8">
           <motion.div
             {...reveal(0.1)}

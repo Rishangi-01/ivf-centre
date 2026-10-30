@@ -53,7 +53,7 @@ export default function WhyChooseUs() {
         <div className="absolute -bottom-24 right-[15%] h-72 w-72 rounded-full bg-[#eaf7f3]/60 blur-3xl" />
       </div>
 
-      <div className="mx-auto grid max-w-[1400px] grid-cols-1 items-center gap-12 px-5 sm:px-8 lg:grid-cols-[0.84fr_1.16fr] lg:gap-12 lg:px-12 xl:gap-16 xl:px-16">
+      <div className="mx-auto grid grid-cols-1 items-center gap-12 px-5 sm:px-8 lg:grid-cols-[0.84fr_1.16fr] lg:gap-12 xl:gap-16 max-w-[1500px] px-5 lg:px-10 xl:px-14">
         
         <motion.div
           initial={reduceMotion ? false : "hidden"}

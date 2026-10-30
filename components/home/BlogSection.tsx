@@ -67,7 +67,7 @@ export default function BlogSection() {
         <div className="absolute -right-32 bottom-0 h-80 w-80 rounded-full bg-[#e2f4ee]/70 blur-3xl" />
       </div>
 
-      <div className="relative mx-auto max-w-[1400px] px-5 sm:px-8 lg:px-12">
+      <div className="relative mx-auto max-w-[1500px] px-5 lg:px-10 xl:px-14">
         {/* Heading */}
         <motion.div
           initial={reduceMotion ? false : { opacity: 0, y: 22 }}

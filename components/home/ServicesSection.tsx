@@ -72,14 +72,14 @@ export default function ServicesSection() {
   return (
     <section
       id="services"
-      className="relative isolate overflow-hidden bg-[#f5fbf9] px-5 py-8 sm:px-8 sm:py-8 lg:px-12 lg:py-8 w-[100%]"
+      className="relative isolate overflow-hidden bg-[#f5fbf9] py-8 sm:py-8 lg:py-8 w-[100%]"
     >
       <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
         <div className="absolute -left-32 top-20 h-80 w-80 rounded-full bg-[#e5f5f0]/70 blur-3xl" />
         <div className="absolute -right-32 bottom-0 h-96 w-96 rounded-full bg-[#e4f4ef]/70 blur-3xl" />
       </div>
 
-      <div className="mx-auto max-w-[1280px]">
+      <div className="mx-auto max-w-[1500px] px-5 lg:px-10 xl:px-14">
         
         <motion.div
           initial={reduceMotion ? false : { opacity: 0, y: 24 }}

@@ -27,7 +27,7 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 w-full bg-white">
       <div className="border-b border-[#e8f0ef] bg-[#f6faf9]">
-        <div className="mx-auto flex max-w-[1420px] items-center justify-between gap-4 px-5 py-2.5 lg:px-10 xl:px-14">
+        <div className="mx-auto flex max-w-[1500px] items-center justify-between gap-4 px-5 py-2.5 lg:px-10 xl:px-14">
           <motion.div
             initial={{ opacity: 0, y: -8 }}
             animate={{ opacity: 1, y: 0 }}
@@ -104,7 +104,7 @@ export default function Navbar() {
       </div>
 
       <div className="border-b border-slate-100/80 bg-white/95 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-[1420px] items-center justify-between gap-5 px-5 py-3.5 lg:px-10 xl:px-14">
+        <div className="mx-auto flex max-w-[1500px] items-center justify-between gap-5 px-5 py-3.5 lg:px-10 xl:px-14">
           <Link
             href="/"
             aria-label="Hope IVF home"
@@ -113,7 +113,7 @@ export default function Navbar() {
             <motion.div
               whileHover={{ scale: 1.07, rotate: -4 }}
               transition={{ type: "spring", stiffness: 300 }}
-              className="relative flex h-60 items-center justify-center rounded-full text-[#086568] h-[54px] w-[80px] lg:h-[54px] lg:w-[155px]"
+              className="relative flex h-60 items-center justify-center rounded-full text-[#086568] h-[54px] w-[80px] lg:h-[54px] lg:w-[211px]"
             >
               <Image
                 src="/images/logo.png"
@@ -221,7 +221,7 @@ export default function Navbar() {
             transition={{ duration: 0.3, ease: "easeInOut" }}
             className="overflow-hidden border-b border-[#e4efed] bg-white xl:hidden"
           >
-            <div className="mx-auto max-w-[1420px] px-5 pb-5 pt-2">
+            <div className="mx-auto max-w-[1500px] px-5 pb-5 pt-2">
               {navLinks.map((link, index) => (
                 <motion.div
                   key={link.name}
