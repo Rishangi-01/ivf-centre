@@ -26,7 +26,7 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 w-full bg-white">
-      <div className="border-b border-[#e8f0ef] bg-[#f6faf9]">
+      <div className="border-b border-[#fdf2f7] bg-[#fdf2f7]">
         <div className="mx-auto flex max-w-[1500px] items-center justify-between gap-4 px-5 py-2.5 lg:px-10 xl:px-14">
           <motion.div
             initial={{ opacity: 0, y: -8 }}
@@ -38,30 +38,30 @@ export default function Navbar() {
               href="https://maps.google.com/?q=Sector+62+Noida"
               target="_blank"
               rel="noreferrer"
-              className="group flex items-center gap-2 transition-colors hover:text-[#086568]"
+              className="group flex items-center gap-2 transition-colors hover:text-[#c2185b]"
             >
-              <MapPin size={16} className="text-[#086568]" />
+              <MapPin size={16} className="text-[#c2185b]" />
               <span>Sector 62, Noida, UP</span>
             </a>
 
             <a
               href="tel:+919876543210"
-              className="group flex items-center gap-2 transition-colors hover:text-[#086568]"
+              className="group flex items-center gap-2 transition-colors hover:text-[#c2185b]"
             >
-              <Phone size={16} className="text-[#086568]" />
+              <Phone size={16} className="text-[#c2185b]" />
               <span>+91 98765 43210</span>
             </a>
 
             <a
               href="mailto:hello@hopeivf.com"
-              className="hidden items-center gap-2 transition-colors hover:text-[#086568] sm:flex"
+              className="hidden items-center gap-2 transition-colors hover:text-[#c2185b] sm:flex"
             >
-              <Mail size={16} className="text-[#086568]" />
+              <Mail size={16} className="text-[#c2185b]" />
               <span>hello@hopeivf.com</span>
             </a>
           </motion.div>
 
-          <div className="hidden items-center gap-5 text-[#075c5e] sm:flex">
+          <div className="hidden items-center gap-5 text-[#a91e53] sm:flex">
             {[
               {
                 icon: FaFacebookF,
@@ -94,7 +94,7 @@ export default function Navbar() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.08 }}
                 whileHover={{ y: -3, scale: 1.12 }}
-                className="transition-colors hover:text-[#13a3a0]"
+                className="transition-colors hover:text-[#d43a79]"
               >
                 <Icon size={18} />
               </motion.a>
@@ -113,7 +113,7 @@ export default function Navbar() {
             <motion.div
               whileHover={{ scale: 1.07, rotate: -4 }}
               transition={{ type: "spring", stiffness: 300 }}
-              className="relative flex h-60 items-center justify-center rounded-full text-[#086568] h-[54px] w-[80px] lg:h-[54px] lg:w-[211px]"
+              className="relative flex h-60 items-center justify-center rounded-full text-[#c2185b] h-[54px] w-[80px] lg:h-[54px] lg:w-[211px]"
             >
               <Image
                 src="/images/logo.png"
@@ -144,14 +144,14 @@ export default function Navbar() {
                   href={link.href}
                   className={`group relative block whitespace-nowrap py-3 text-[14px] lg:text-[16px] font-semibold transition-colors duration-300 ${
                     link.active
-                      ? "text-[#086568]"
-                      : "text-slate-600 hover:text-[#086568]"
+                      ? "text-[#c2185b]"
+                      : "text-slate-600 hover:text-[#c2185b]"
                   }`}
                 >
                   {link.name}
 
                   <motion.span
-                    className="absolute -bottom-[2px] left-0 h-[2px] rounded-full bg-[#087577]"
+                    className="absolute -bottom-[2px] left-0 h-[2px] rounded-full bg-[#c2185b]"
                     initial={false}
                     animate={{
                       width: link.active ? "100%" : "0%",
@@ -160,7 +160,7 @@ export default function Navbar() {
                   />
 
                   {!link.active && (
-                    <span className="absolute -bottom-[2px] left-0 h-[3px] w-0 rounded-full bg-[#087577] transition-all duration-300 group-hover:w-full" />
+                    <span className="absolute -bottom-[2px] left-0 h-[3px] w-0 rounded-full bg-[#c2185b] transition-all duration-300 group-hover:w-full" />
                   )}
                 </Link>
               </motion.div>
@@ -175,7 +175,7 @@ export default function Navbar() {
           >
             <Link
               href="/contact"
-              className="group relative flex items-center justify-center gap-3 overflow-hidden rounded-full bg-[#086568] px-6 py-3.5 text-[13px] lg:text-[16px] font-semibold text-white shadow-[0_6px_18px_rgba(8,101,104,0.15)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#064f52] hover:shadow-[0_10px_25px_rgba(8,101,104,0.25)]"
+              className="group relative flex items-center justify-center gap-3 overflow-hidden rounded-full bg-[#c2185b] px-6 py-3.5 text-[13px] lg:text-[16px] font-semibold text-white shadow-[0_6px_18px_rgba(194,24,91,0.15)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#a51d55] hover:shadow-[0_10px_25px_rgba(194,24,91,0.25)]"
             >
               <span className="relative z-10">Book Appointment</span>
               <ArrowRight
@@ -193,7 +193,7 @@ export default function Navbar() {
             }
             aria-expanded={menuOpen}
             onClick={() => setMenuOpen((open) => !open)}
-            className="flex h-11 w-11 items-center justify-center rounded-xl border border-[#d9eae7] text-[#086568] transition-colors hover:bg-[#edf7f5] xl:hidden"
+            className="flex h-11 w-11 items-center justify-center rounded-xl border border-[#f9dce9] text-[#c2185b] transition-colors hover:bg-[#fdf2f7] xl:hidden"
           >
             <AnimatePresence mode="wait" initial={false}>
               <motion.span
@@ -219,7 +219,7 @@ export default function Navbar() {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
-            className="overflow-hidden border-b border-[#e4efed] bg-white xl:hidden"
+            className="overflow-hidden border-b border-[#fce7f3] bg-white xl:hidden"
           >
             <div className="mx-auto max-w-[1500px] px-5 pb-5 pt-2">
               {navLinks.map((link, index) => (
@@ -232,8 +232,8 @@ export default function Navbar() {
                   <Link
                     href={link.href}
                     onClick={() => setMenuOpen(false)}
-                    className={`flex items-center justify-between border-b border-slate-100 py-3.5 text-sm font-semibold transition-colors hover:text-[#087577] ${
-                      link.active ? "text-[#087577]" : "text-slate-600"
+                    className={`flex items-center justify-between border-b border-slate-100 py-3.5 text-sm font-semibold transition-colors hover:text-[#c2185b] ${
+                      link.active ? "text-[#c2185b]" : "text-slate-600"
                     }`}
                   >
                     {link.name}
@@ -245,7 +245,7 @@ export default function Navbar() {
               <Link
                 href="/contact"
                 onClick={() => setMenuOpen(false)}
-                className="mt-5 flex w-full items-center justify-center gap-3 rounded-full bg-[#086568] px-5 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-[#064f52]"
+                className="mt-5 flex w-full items-center justify-center gap-3 rounded-full bg-[#c2185b] px-5 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-[#a51d55]"
               >
                 Book Appointment
                 <ArrowRight size={17} />
@@ -253,14 +253,14 @@ export default function Navbar() {
 
               <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-3 text-xs text-slate-500">
                 <a href="tel:+919876543210" className="flex items-center gap-2">
-                  <Phone size={14} className="text-[#086568]" />
+                  <Phone size={14} className="text-[#c2185b]" />
                   +91 98765 43210
                 </a>
                 <a
                   href="mailto:hello@hopeivf.com"
                   className="flex items-center gap-2"
                 >
-                  <Mail size={14} className="text-[#086568]" />
+                  <Mail size={14} className="text-[#c2185b]" />
                   hello@hopeivf.com
                 </a>
               </div>

@@ -104,12 +104,12 @@ export default function StatsSection() {
     <section
       ref={sectionRef}
       aria-labelledby="stats-heading"
-      className="relative isolate overflow-hidden bg-[#f4fbf9] max-w-[1500px] px-5 lg:px-10 xl:px-14 py-10 sm:py-12 w-[100%]"
+      className="relative isolate overflow-hidden bg-[#fdf2f7] max-w-[1500px] px-5 lg:px-10 xl:px-14 py-10 sm:py-12 w-[100%]"
     >
       
       <div className="pointer-events-none absolute inset-0 -z-10">
         <div className="absolute left-1/4 top-0 h-52 w-52 rounded-full bg-white/80 blur-3xl" />
-        <div className="absolute bottom-0 right-1/4 h-52 w-52 rounded-full bg-[#e2f4ee]/80 blur-3xl" />
+        <div className="absolute bottom-0 right-1/4 h-52 w-52 rounded-full bg-[#fce7f3]/80 blur-3xl" />
       </div>
 
       
@@ -174,13 +174,13 @@ export default function StatsSection() {
           transition={{ duration: 0.6 }}
           className="mb-7 text-center sm:mb-8"
         >
-          <span className="inline-flex rounded-full border border-[#d8eee8] bg-[#e0f5ef] px-3.5 py-1 text-[11px] font-bold tracking-wide text-[#176c68] sm:text-xs">
+          <span className="inline-flex rounded-full border border-[#f9dce9] bg-[#fce7f3] px-3.5 py-1 text-[11px] font-bold tracking-wide text-[#c2185b] sm:text-xs">
             Our Numbers
           </span>
 
           <h2
             id="stats-heading"
-            className="mt-2 font-serif text-[24px] font-bold leading-tight text-[#164653] sm:text-[29px] lg:text-[32px]"
+            className="mt-2 font-serif text-[24px] font-bold leading-tight text-[#5b1d3d] sm:text-[29px] lg:text-[38px]"
           >
             Years of Trust, Countless Happy Families
           </h2>
@@ -210,25 +210,25 @@ export default function StatsSection() {
                     ? undefined
                     : { y: -5, scale: 1.025 }
                 }
-                className={`group relative flex cursor-default flex-col items-center rounded-2xl px-3 py-2 text-center transition-colors duration-300 hover:bg-white/75 hover:shadow-[0_8px_24px_rgba(8,101,104,0.07)] ${
-                  index % 2 === 0 ? "border-r border-[#deeeea] md:border-r-0" : ""
+                className={`group relative flex cursor-default flex-col items-center rounded-2xl px-3 py-2 text-center transition-colors duration-300 hover:bg-white/75 hover:shadow-[0_8px_24px_rgba(194,24,91,0.07)] ${
+                  index % 2 === 0 ? "border-r border-[#f9dce9] md:border-r-0" : ""
                 } ${
                   index < 3
-                    ? "md:border-r md:border-[#deeeea]"
+                    ? "md:border-r md:border-[#f9dce9]"
                     : ""
                 }`}
               >
                 
-                <div className="mb-2 flex h-10 w-10 items-center justify-center text-[#116c68] transition-transform duration-300 group-hover:scale-110 sm:h-11 sm:w-11">
+                <div className="mb-2 flex h-10 w-10 items-center justify-center text-[#c2185b] transition-transform duration-300 group-hover:scale-110 sm:h-11 sm:w-11">
                   <Icon
-                    size={31}
+                    size={35}
                     strokeWidth={2}
-                    className="transition-colors duration-300 group-hover:text-[#15958c]"
+                    className="transition-colors duration-300 group-hover:text-[#d43a79]"
                   />
                 </div>
 
                 
-                <p className="font-serif text-[25px] font-bold leading-tight text-[#12625f] lg:text-4xl">
+                <p className="font-serif text-[25px] font-bold leading-tight text-[#b11b55] lg:text-5xl">
                   <AnimatedCounter
                     value={stat.value}
                     suffix={stat.suffix}
@@ -238,13 +238,13 @@ export default function StatsSection() {
                 </p>
 
                 
-                <p className="mt-1.5 text-xs font-medium leading-5 text-[#718398] transition-colors duration-300 group-hover:text-[#286b68] lg:text-lg">
+                <p className="mt-1.5 text-xs font-medium leading-5 text-[#718398] transition-colors duration-300 group-hover:text-[#c2185b] lg:text-xl">
                   {stat.label}
                 </p>
 
                 
                 <motion.span
-                  className="absolute bottom-0 h-[2px] rounded-full bg-[#12827c]"
+                  className="absolute bottom-0 h-[2px] rounded-full bg-[#b11b55]"
                   initial={{ width: 0 }}
                   whileHover={{ width: "45%" }}
                   transition={{ duration: 0.3 }}

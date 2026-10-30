@@ -154,7 +154,7 @@ export default function SuccessStories() {
           transition={{ duration: 0.65 }}
           className="mb-9 text-center sm:mb-12"
         >
-          <span className="inline-flex rounded-full border border-[#d8eee8] bg-[#e2f5ef] px-3.5 py-1 text-[11px] font-bold text-[#176b68] sm:text-xs">
+          <span className="inline-flex rounded-full border border-[#f9dce9] bg-[#fce7f3] px-3.5 py-1 text-[11px] font-bold text-[#c2185b] sm:text-xs">
             Success Stories
           </span>
 
@@ -188,7 +188,7 @@ export default function SuccessStories() {
             type="button"
             onClick={previous}
             aria-label="Previous success stories"
-            className="absolute left-0 top-1/2 z-30 hidden h-11 w-11 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-[#dcefeb] bg-white text-[#176b68] shadow-lg transition-all duration-300 hover:scale-110 hover:bg-[#e8f7f2] md:flex"
+            className="absolute left-0 top-1/2 z-30 hidden h-11 w-11 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-[#f9dce9] bg-white text-[#c2185b] shadow-lg transition-all duration-300 hover:scale-110 hover:bg-[#fdf2f7] md:flex"
           >
             <ArrowLeft size={20} />
           </button>
@@ -197,7 +197,7 @@ export default function SuccessStories() {
             type="button"
             onClick={next}
             aria-label="Next success stories"
-            className="absolute right-0 top-1/2 z-30 hidden h-11 w-11 translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-[#dcefeb] bg-white text-[#176b68] shadow-lg transition-all duration-300 hover:scale-110 hover:bg-[#e8f7f2] md:flex"
+            className="absolute right-0 top-1/2 z-30 hidden h-11 w-11 translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-[#f9dce9] bg-white text-[#c2185b] shadow-lg transition-all duration-300 hover:scale-110 hover:bg-[#fdf2f7] md:flex"
           >
             <ArrowRight size={20} />
           </button>
@@ -226,9 +226,9 @@ export default function SuccessStories() {
                 >
                   <motion.article
                     whileHover={reduceMotion ? undefined : { y: -4 }}
-                    className="group relative flex h-full min-h-[270px] flex-col overflow-hidden rounded-[15px] border border-[#e1efec] bg-white shadow-[0_4px_18px_rgba(19,87,78,0.045)] transition-shadow duration-300 hover:shadow-[0_14px_30px_rgba(19,87,78,0.11)]"
+                    className="group relative flex h-full min-h-[270px] flex-col overflow-hidden rounded-[0px] border border-[#fce7f3] bg-white shadow-[0_4px_18px_rgba(120,25,60,0.045)] transition-shadow duration-300 hover:shadow-[0_14px_30px_rgba(120,25,60,0.11)]"
                   >
-                    <div className="relative h-[88px] shrink-0 overflow-hidden sm:h-[95px]">
+                    <div className="relative h-[150px] shrink-0 overflow-hidden lg:h-[222px]">
                       <Image
                         src={story.coupleImage}
                         alt={`Family success story shared by ${story.name}`}
@@ -236,20 +236,20 @@ export default function SuccessStories() {
                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                         className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-[#123d42]/15 to-transparent" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#4e1932]/15 to-transparent" />
                     </div>
 
-                    <div className="absolute left-5 top-[66px] z-10 flex h-9 w-9 items-center justify-center rounded-full border border-[#e3f2ee] bg-white text-[#126c68] shadow-sm">
+                    <div className="absolute left-5 top-[66px] z-10 flex h-9 w-9 items-center justify-center rounded-full border border-[#fce7f3] bg-white text-[#c2185b] shadow-sm">
                       <Quote size={19} fill="currentColor" />
                     </div>
 
-                    <div className="flex flex-1 flex-col px-5 pb-4 pt-7 sm:px-6">
-                      <p className="text-[13px] leading-[1.65] text-[#63768b] sm:text-sm">
+                    <div className="flex flex-1 flex-col px-5 pb-4 pt-5 sm:px-6">
+                      <p className="text-[13px] leading-[1.65] text-[#63768b] lg:text-xl">
                         &ldquo;{story.quote}&rdquo;
                       </p>
 
                       <div className="mt-auto flex items-center gap-2.5 pt-4">
-                        <div className="relative h-8 w-8 shrink-0 overflow-hidden rounded-full border border-[#dceee9] bg-[#e8f6f1]">
+                        <div className="relative h-8 w-8 lg:h-16 lg:w-16 shrink-0 overflow-hidden rounded-full border border-[#f9dce9] bg-[#fdf2f7]">
                           <Image
                             src={story.avatar}
                             alt=""
@@ -260,10 +260,10 @@ export default function SuccessStories() {
                         </div>
 
                         <div className="min-w-0">
-                          <p className="truncate text-xs font-bold text-[#203d53]">
+                          <p className="truncate text-xs lg:text-lg font-bold text-[#203d53]">
                             {story.name}
                           </p>
-                          <p className="mt-0.5 text-[11px] text-[#8492a2]">
+                          <p className="mt-0.5 text-[11px] lg:text-[16px] text-[#8492a2]">
                             {story.location}
                           </p>
                         </div>
@@ -281,7 +281,7 @@ export default function SuccessStories() {
               type="button"
               onClick={previous}
               aria-label="Previous success stories"
-              className="flex h-10 w-10 items-center justify-center rounded-full border border-[#dcefeb] bg-white text-[#176b68] shadow-sm transition-colors hover:bg-[#e7f6f1]"
+              className="flex h-10 w-10 items-center justify-center rounded-full border border-[#f9dce9] bg-white text-[#c2185b] shadow-sm transition-colors hover:bg-[#fce7f3]"
             >
               <ArrowLeft size={19} />
             </button>
@@ -290,7 +290,7 @@ export default function SuccessStories() {
               type="button"
               onClick={next}
               aria-label="Next success stories"
-              className="flex h-10 w-10 items-center justify-center rounded-full border border-[#dcefeb] bg-white text-[#176b68] shadow-sm transition-colors hover:bg-[#e7f6f1]"
+              className="flex h-10 w-10 items-center justify-center rounded-full border border-[#f9dce9] bg-white text-[#c2185b] shadow-sm transition-colors hover:bg-[#fce7f3]"
             >
               <ArrowRight size={19} />
             </button>
@@ -309,8 +309,8 @@ export default function SuccessStories() {
                 aria-current={index % stories.length === dotIndex ? "true" : undefined}
                 className={`h-2 rounded-full transition-all duration-300 ${
                   index % stories.length === dotIndex
-                    ? "w-5 bg-[#176f6b]"
-                    : "w-2 bg-[#c9e7df] hover:bg-[#79bdb0]"
+                    ? "w-5 bg-[#c2185b]"
+                    : "w-2 bg-[#f9dce9] hover:bg-[#ed78a5]"
                 }`}
               />
             ))}

@@ -38,8 +38,8 @@ export default function AboutSection() {
     >
       
       <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
-        <div className="absolute left-[8%] top-10 h-64 w-64 rounded-full bg-[#e9f7f3]/60 blur-3xl" />
-        <div className="absolute bottom-0 right-[10%] h-72 w-72 rounded-full bg-[#f0f9f6]/70 blur-3xl" />
+        <div className="absolute left-[8%] top-10 h-64 w-64 rounded-full bg-[#fdf2f7]/60 blur-3xl" />
+        <div className="absolute bottom-0 right-[10%] h-72 w-72 rounded-full bg-[#fdf2f7]/70 blur-3xl" />
       </div>
 
       <div className="mx-auto grid grid-cols-1 items-center gap-12 max-w-[1500px] px-5 lg:px-10 xl:px-14 lg:grid-cols-2 lg:gap-16 xl:gap-20">
@@ -64,7 +64,7 @@ export default function AboutSection() {
               repeat: Infinity,
               ease: "easeInOut",
             }}
-            className="absolute left-[10%] top-[1%] h-[83%] w-[63%] rounded-[44px] bg-[#e9f6f2] sm:rounded-[55px]"
+            className="absolute left-[10%] top-[1%] h-[83%] w-[63%] rounded-[44px] bg-[#fdf2f7] sm:rounded-[55px]"
           />
 
           
@@ -94,17 +94,17 @@ export default function AboutSection() {
               stiffness: 130,
             }}
             whileHover={reduceMotion ? undefined : { scale: 1.04 }}
-            className="absolute left-[54%] top-[60%] z-20 flex aspect-square w-[32%] max-w-[205px] -translate-y-1/2 flex-col items-center justify-center rounded-full border border-[#e0f2ed] bg-[#effbf7] text-center shadow-[0_12px_40px_rgba(25,100,87,0.07)] sm:w-[34%]"
+            className="absolute left-[54%] top-[60%] z-20 flex aspect-square w-[32%] max-w-[205px] -translate-y-1/2 flex-col items-center justify-center rounded-full border border-[#fce7f3] bg-[#fdf2f7] text-center shadow-[0_12px_40px_rgba(194,24,91,0.07)] sm:w-[34%]"
           >
-            <span className="font-serif text-4xl font-bold leading-none text-[#116c68] sm:text-5xl lg:text-[48px]">
+            <span className="font-serif text-4xl font-bold leading-none text-[#dd3777] sm:text-5xl lg:text-[48px]">
               25+
             </span>
 
-            <span className="mt-3 text-sm font-medium leading-6 text-[#59847f] sm:text-base">
+            <span className="mt-3 text-sm font-medium leading-6 text-[#a84c70] sm:text-base">
               Years of
             </span>
 
-            <span className="text-sm font-bold leading-6 text-[#236963] sm:text-base">
+            <span className="text-sm font-bold leading-6 text-[#dd3777] sm:text-base">
               Experience
             </span>
           </motion.div>
@@ -168,7 +168,7 @@ export default function AboutSection() {
           
           <motion.div
             variants={fadeRight}
-            className="mb-4 inline-flex items-center rounded-full border border-[#d7eee8] bg-[#e5f6f1] px-4 py-2 text-xs font-bold tracking-wide text-[#176d69] sm:text-sm"
+            className="mb-4 inline-flex items-center rounded-full border border-[#f9dce9] bg-[#fce7f3] px-4 py-2 text-xs font-bold tracking-wide text-[#dd3777] sm:text-sm"
           >
             About Hope IVF
           </motion.div>
@@ -199,7 +199,7 @@ export default function AboutSection() {
           <motion.div variants={fadeRight} className="mt-6">
             <Link
               href="/about-us"
-              className="group inline-flex min-h-[52px] items-center justify-center gap-4 rounded-full bg-[#086568] px-8 py-3.5 text-sm font-semibold text-white shadow-[0_8px_22px_rgba(8,101,104,0.13)] transition-all duration-300 hover:-translate-y-1 hover:bg-[#064f52] hover:shadow-[0_12px_26px_rgba(8,101,104,0.22)]"
+              className="group inline-flex min-h-[52px] items-center justify-center gap-4 rounded-full bg-[#dd3777] px-8 py-3.5 text-sm font-semibold text-white shadow-[0_8px_22px_rgba(194,24,91,0.13)] transition-all duration-300 hover:-translate-y-1 hover:bg-[#dd3777] hover:shadow-[0_12px_26px_rgba(194,24,91,0.22)]"
             >
               Learn More
               <ArrowRight

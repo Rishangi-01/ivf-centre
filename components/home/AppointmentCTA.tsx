@@ -10,17 +10,17 @@ export default function AppointmentCTA() {
   const reduceMotion = useReducedMotion();
 
   return (
-    <section className="bg-[#f5fbf9] py-8 sm:py-10 w-[100%]">
+    <section className="bg-[#fdf2f7] py-8 sm:py-10 w-[100%]">
       <div className="mx-auto max-w-[1500px] px-5 lg:px-10 xl:px-14">
         <motion.div
           initial={reduceMotion ? false : { opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
-          className="group relative isolate overflow-hidden rounded-[22px] border border-[#2c7778]/50 bg-gradient-to-r from-[#064e52] via-[#0a5c60] to-[#104f53] px-5 py-7 shadow-[0_10px_30px_rgba(7,77,79,0.12)] sm:px-8 sm:py-8 lg:px-12 lg:py-6"
+          className="group relative isolate overflow-hidden rounded-[22px] border border-[#d43a79]/50 bg-gradient-to-r from-[#68193a] via-[#a91e53] to-[#104f53] px-5 py-7 shadow-[0_10px_30px_rgba(100,20,49,0.12)] sm:px-8 sm:py-8 lg:px-12 lg:py-6"
         >
           {/* Subtle gradient decoration */}
-          <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_25%_50%,rgba(91,180,166,0.16),transparent_55%)]" />
+          <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_25%_50%,rgba(221,55,119,0.16),transparent_55%)]" />
 
           {/* Decorative glow */}
           <motion.div
@@ -35,7 +35,7 @@ export default function AppointmentCTA() {
               repeat: Infinity,
               ease: "easeInOut",
             }}
-            className="pointer-events-none absolute -right-10 -top-20 -z-10 h-56 w-56 rounded-full bg-[#5eb7aa]/20 blur-3xl"
+            className="pointer-events-none absolute -right-10 -top-20 -z-10 h-56 w-56 rounded-full bg-[#ed78a5]/20 blur-3xl"
           />
 
           <div className="relative flex flex-col items-center gap-6 text-center sm:flex-row sm:gap-6 sm:text-left lg:gap-10">
@@ -69,7 +69,7 @@ export default function AppointmentCTA() {
             <div className="relative z-20 shrink-0">
               <Link
                 href="/contact-us"
-                className="group/button inline-flex min-h-[48px] items-center justify-center gap-3 rounded-full border border-[#e4f1ef] bg-white px-6 py-3 text-sm font-bold text-[#14585a] shadow-[0_5px_16px_rgba(0,0,0,0.12)] transition-all duration-300 hover:-translate-y-1 hover:bg-[#e7f7f2] hover:shadow-[0_10px_24px_rgba(0,0,0,0.18)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-4 focus-visible:ring-offset-[#0a5c60]"
+                className="group/button inline-flex min-h-[48px] items-center justify-center gap-3 rounded-full border border-[#fce7f3] bg-white px-6 py-3 text-sm font-bold text-[#a91e53] shadow-[0_5px_16px_rgba(0,0,0,0.12)] transition-all duration-300 hover:-translate-y-1 hover:bg-[#fce7f3] hover:shadow-[0_10px_24px_rgba(0,0,0,0.18)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-4 focus-visible:ring-offset-[#a91e53]"
               >
                 Book Appointment
                 <ArrowRight

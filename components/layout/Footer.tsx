@@ -94,11 +94,11 @@ export default function Footer() {
   const reduceMotion = useReducedMotion();
 
   return (
-    <footer className="relative overflow-hidden bg-gradient-to-br from-[#073b46] via-[#063641] to-[#082f3b] text-white">
+    <footer className="relative overflow-hidden bg-gradient-to-br from-[#4a1631] via-[#4a1631] to-[#4a1631] text-white">
       {/* Subtle background decoration */}
       <div className="pointer-events-none absolute inset-0">
-        <div className="absolute -right-24 -top-32 h-80 w-80 rounded-full bg-[#147c7b]/15 blur-3xl" />
-        <div className="absolute -bottom-40 left-[20%] h-80 w-80 rounded-full bg-[#13827a]/10 blur-3xl" />
+        <div className="absolute -right-24 -top-32 h-80 w-80 rounded-full bg-[#d43a79]/15 blur-3xl" />
+        <div className="absolute -bottom-40 left-[20%] h-80 w-80 rounded-full bg-[#b11b55]/10 blur-3xl" />
       </div>
 
       <div className="relative mx-auto max-w-[1500px] px-5 sm:px-8 lg:px-12">
@@ -152,7 +152,7 @@ export default function Footer() {
                         : { y: -4, scale: 1.08 }
                     }
                     whileTap={reduceMotion ? undefined : { scale: 0.94 }}
-                    className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-white text-[#07434c] transition-colors duration-300 hover:bg-[#c9f0e6] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#073b46]"
+                    className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-white text-[#5b1d3d] transition-colors duration-300 hover:bg-[#fce7f3] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#4a1631]"
                   >
                     <Icon size={16} />
                   </motion.a>
@@ -172,7 +172,7 @@ export default function Footer() {
                 <li key={item.label}>
                   <Link
                     href={item.href}
-                    className="group inline-flex items-center gap-2 text-sm text-white/75 transition-colors duration-300 hover:text-[#a8e8db]"
+                    className="group inline-flex items-center gap-2 text-sm text-white/75 transition-colors duration-300 hover:text-[#f4a8c6]"
                   >
                     <ArrowRight
                       size={14}
@@ -196,7 +196,7 @@ export default function Footer() {
                 <li key={service.label}>
                   <Link
                     href={service.href}
-                    className="group inline-flex items-center gap-2 text-sm text-white/75 transition-colors duration-300 hover:text-[#a8e8db]"
+                    className="group inline-flex items-center gap-2 text-sm text-white/75 transition-colors duration-300 hover:text-[#f4a8c6]"
                   >
                     <ArrowRight
                       size={14}
@@ -223,7 +223,7 @@ export default function Footer() {
                   <li key={item.text}>
                     <a
                       href={item.href}
-                      className="group flex items-start gap-3 text-sm leading-6 text-white/75 transition-colors duration-300 hover:text-[#b7eee3]"
+                      className="group flex items-start gap-3 text-sm leading-6 text-white/75 transition-colors duration-300 hover:text-[#f4a8c6]"
                     >
                       <Icon
                         size={19}
