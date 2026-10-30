@@ -252,7 +252,7 @@ export default function Footer() {
         {/* Copyright bar */}
         <div className="flex flex-col gap-4 py-5 text-xs text-white/70 sm:flex-row sm:items-center sm:justify-between sm:gap-6 sm:text-sm">
           <p>
-            © {new Date().getFullYear()} Hope IVF. All rights reserved.
+            © {2026} Hope IVF. All rights reserved.
           </p>
 
           <div className="flex flex-wrap items-center gap-3">
